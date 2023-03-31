@@ -28,10 +28,10 @@ public class MessageRestController {
 
     private final IMessageHandler messageHandler;
 
-    @Operation(summary = "Add a new object")
+    @Operation(summary = "Add a new Message")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "Object created", content = @Content),
-            @ApiResponse(responseCode = "409", description = "Object already exists", content = @Content)
+            @ApiResponse(responseCode = "201", description = "Message created", content = @Content),
+            @ApiResponse(responseCode = "409", description = "Message already exists", content = @Content)
     })
     @PostMapping("/")
     public ResponseEntity<Void> proccesMessage(@RequestBody MessageRequestDto messageRequestDto) {
