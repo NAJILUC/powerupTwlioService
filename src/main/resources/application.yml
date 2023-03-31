@@ -1,0 +1,21 @@
+server:
+  port: 8085
+
+TWILIO_ACCOUNT_SID : AC05479974767d627c58758a2d171e7f42
+TWILIO_AUTH_TOKEN : b969f3f89f3c1129b95f0c83afc48e85
+TWILIO_FROM_PHONE_NUMBER : +15855522452
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/powerup
+    username: root
+    password: sasa
+  application:
+    name: message-service
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+appDescription: "Pragma Powerup"
+appVersion: "1.0.0"
